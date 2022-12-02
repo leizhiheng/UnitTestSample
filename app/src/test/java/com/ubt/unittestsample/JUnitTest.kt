@@ -57,14 +57,4 @@ class JUnitTest {
         var level = StudentUtil.judgeGradleLevel(90)
         assertEquals("A", level)
     }
-
-    /**
-     * 不支持静态方法
-     */
-    @Test
-    fun privateUpdateClassRoomId_CorrectId_ReturnSameString() {
-        val s1 = Student(1001, 22, "lzh")
-//        s1.updateClassRoomId("");
-        assertEquals("不支持静态方法", "1001", "")
-    }
 }

@@ -13,14 +13,28 @@
         android:theme="@style/Theme.UnitTestSample"
         tools:targetApi="31">
         <activity
-            android:name=".SampleActivity"
+            android:name=".espresso.SubEspressTestActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".espresso.EspressoTestActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".robolectric.activities.SampleActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".robolectric.activities.LoginActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

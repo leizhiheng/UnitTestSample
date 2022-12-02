@@ -22,6 +22,7 @@ class SampleActivity : AppCompatActivity() {
         setContentView(R.layout.activity_simple)
         lifecycleTextView = findViewById(R.id.tv_lifecycle_value)
         inverseCheckBox = findViewById(R.id.checkbox)
+        lifecycleTextView.setText(R.string.sample_lifecycle_oncreate)
     }
 
     fun forward(view: View) {
